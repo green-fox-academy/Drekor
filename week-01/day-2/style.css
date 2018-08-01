@@ -1,0 +1,41 @@
+.links{
+    line-height: 50px;
+    background-color: #333333;   
+    position: fixed;
+    top:2px;
+    left:1px;
+    right:2px;
+    text-align: right;
+    padding-right: 10%;
+    word-spacing: 35px ;
+}
+a{
+    color:#ff0094;
+}
+body{
+    background-image: url("./topography.png");
+}
+.logo{
+    position: relative;
+    left: 10%;
+    top:2px;
+}
+.name{
+    font-size: 55px;
+}
+.padding{
+    padding: 5% 10% 0% 10%;
+    font-family: 'Merriweather', consolas, courier;
+   }
+.pink{
+    color:#ff0094;
+}
+#wiki{
+    text-align: center;
+}
+#dot{
+    color: #a5a2a2;
+    letter-spacing: 20px;
+    text-align: center;
+    visibility: 80%;
+}
