@@ -4,7 +4,9 @@ let a: number = 24;
 let out: number = 0;
 
 // if a is even increment out by one
-
+if(a % 2 == 0){
+    out++;
+}
 console.log(out);
 
 let b: number = 13;

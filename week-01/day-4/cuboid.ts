@@ -1,11 +1,10 @@
 'use strict';
 
-let sideOne = 10;
-let numberTwo = 20;
-let numberThree = 30;
+let a = 10;
+let b = 10;
+let c = 10;
 
-let firstOne = sideOne * numberTwo *numberThree;
-let secondOne = (sideOne * sideOne) * (numberTwo * numberTwo) * (numberThree * numberThree) * 2;
-
-console.log(firstOne);
-console.log(secondOne);
+var cuboidSurfaceArea = 2 * (a * b + b * c + c * a);
+var cuboidVolume = a * b * c;
+console.log("Surface Area: " + cuboidSurfaceArea);
+console.log("Volume: " + cuboidVolume);
