@@ -17,8 +17,8 @@ function lineDrawingFunction(x:number, y:number) {
     ctx.stroke();
 
     for(let i = 0 ; i < 2 ; i++){
-        x += 10;
-        y += 10;
+        x += 3;
+        y += 30;
         ctx.beginPath();
         ctx.moveTo(x,y);
         ctx.lineTo(300,200);
@@ -26,4 +26,4 @@ function lineDrawingFunction(x:number, y:number) {
     }
 }
 
-lineDrawingFunction(50,50);
+lineDrawingFunction(11,11);
