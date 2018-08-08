@@ -20,8 +20,8 @@ function horizontalLineDrawing(x:number, y:number) {
         x += 0;
         y += 10;
         ctx.beginPath();
-        ctx.moveTo(100,y);
-        ctx.lineTo(x,y);
+        ctx.moveTo(x,y);
+        ctx.lineTo(x+50,y);
         ctx.stroke();
     }
 }

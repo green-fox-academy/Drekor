@@ -26,4 +26,4 @@ function lineDrawingFunction(x:number, y:number) {
     }
 }
 
-lineDrawingFunction(11,11);
+lineDrawingFunction(15,15);
