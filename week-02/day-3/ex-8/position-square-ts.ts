@@ -10,6 +10,19 @@ const ctx = canvas.getContext('2d');
 // Draw 3 squares with that function.
 // Avoid code duplication.
 
-function (params:type) {
-    
+
+function squareDrawing(x: number, y: number) {
+
+    ctx.fillRect(x, y, 50, 50)
+    ctx.fill();
 }
+
+for (let i = 0; i < 3; i++) {
+
+    let x = 10 * i*5;
+    let y = 10 * i*5;
+
+    squareDrawing(x,y)
+
+}
+
