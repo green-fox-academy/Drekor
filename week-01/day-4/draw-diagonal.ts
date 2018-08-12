@@ -27,9 +27,9 @@ for (let i = 1; i <= lineCount; i++) {
     for (let dinamicRow = 1; dinamicRow <= lineCount - 1; dinamicRow++) {
       if (dinamicRow == 1 || dinamicRow == lineCount - 1) {
         row += '%';
-      } else if(dinamicRow == i){
+      } else if (dinamicRow == i) {
         row += '%';
-      }else{
+      } else {
         row += ' ';
       }
     }
