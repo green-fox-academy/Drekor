@@ -9,5 +9,5 @@ const ctx = canvas.getContext('2d');
 
 ctx.beginPath();
 ctx.fillStyle = "green";
-ctx.fillRect(295,195,10,10);
+ctx.fillRect(295, 195, 10, 10);
 ctx.stroke();

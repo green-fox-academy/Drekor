@@ -12,5 +12,4 @@ function appendAFunc(params:string) {
     return params = typo + 'a';
 }
 
-let answer = appendAFunc(typo);
-console.log(answer);
+console.log(appendAFunc(typo));

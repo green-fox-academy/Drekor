@@ -32,16 +32,16 @@ studentsCandies(students);
 
 function studentsAge(studs :any) {
 
-    let studentsNumber = 0;
+    let sumOfAge = 0;
 
     studs.forEach (element => {
 
-        if( element.candides < 5){
-            
-            console.log(studentsNumber);
+        if(element.candies < 5){
+
+            sumOfAge += element.age;
         }
-    }
-)
+    });
+    console.log(sumOfAge);
 }
 studentsAge(students);
 

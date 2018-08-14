@@ -1,5 +1,5 @@
 'use strict';
-export{}
+export { }
 
 // Saturn is missing from the planetList
 // Insert it into the correct position
@@ -8,10 +8,11 @@ export{}
 let planetList: string[] = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Uranus', 'Neptune'];
 // Expected output: "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune", "Saturn"
 
-function putSaturn(params:string[]) {
-    params.push('Saturn')
-
-    console.log(putSaturn(planetList));
+function putSaturn(params: string[]) {
+  params.push('Saturn')
 }
+putSaturn(planetList);
+
+console.log(planetList);
 
 export = putSaturn;

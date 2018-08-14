@@ -19,10 +19,10 @@ function squareDrawing(x: number, y: number) {
 
 for (let i = 0; i < 3; i++) {
 
-    let x = 10 * i*5;
-    let y = 10 * i*5;
+    let x = 10 * i * 5;
+    let y = 10 * i * 5;
 
-    squareDrawing(x,y)
+    squareDrawing(x, y)
 
 }
 

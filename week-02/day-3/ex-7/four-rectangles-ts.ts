@@ -11,16 +11,17 @@ let color = ["red", "green", "orange", "blue"];
 
 function drawRectangles(x: number, y: number, h: number, j: number) {
 
-    ctx.fillRect(x, y, h, j);
-    ctx.fill();
+  ctx.fillRect(x, y, h, j);
+  ctx.fill();
 
 }
 for (let i = 0; i < 4; i++) {
 
-    ctx.fillStyle = color[i];
-    let x = Math.floor(Math.random()* canvas.width /2)
-    let y = Math.floor(Math.random()* canvas.height /2)
-    let h = Math.floor(Math.random()* canvas.width /2)
-    let j = Math.floor(Math.random()* canvas.width /2)
-    drawRectangles(x, y, h, j);
+  ctx.fillStyle = color[i];
+  let x = Math.floor(Math.random() * canvas.width / 2)
+  let y = Math.floor(Math.random() * canvas.width / 2)
+  let h = Math.floor(Math.random() * canvas.width / 4)
+  let j = Math.floor(Math.random() * canvas.width / 4)
+
+  drawRectangles(x, y, h, j);
 }

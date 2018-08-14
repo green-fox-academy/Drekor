@@ -16,9 +16,8 @@ function squareDrawingF(size: number, colors: string) {
     ctx.fillStyle = colors;
     ctx.fillRect(canvas.width /2 - size /2 , canvas.height /2 - size /2, size , size);
 }
-squareDrawingF(50,rainbowColors[0]);
 
 for( let i = 0 ; i < rainbowColors.length ;i++){
     
-    squareDrawingF(400 - i*70, rainbowColors[i]);
+    squareDrawingF(canvas.height - i*50, rainbowColors[i]);
 }

@@ -36,7 +36,7 @@ function averageCandies(params: any[]) {
         candiesAv += element.candies;
 
     });
-    
-    return candiesAv/ students.length;
+
+    return candiesAv / students.length;
 }
 console.log(averageCandies(students));

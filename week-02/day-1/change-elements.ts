@@ -9,4 +9,4 @@ numList.map(function (i) {
         numList.splice(i, 1, 4);
     }
 });
-console.log(numList);
+console.log(numList[3]);

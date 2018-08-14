@@ -12,9 +12,7 @@ const ctx = canvas.getContext('2d');
 
 
 
-function squareDrawingFun(x: number) {
-
-    let size = x
+function squareDrawingFun(size: number) {
 
     for (let i = 0; i < 3; i++) {
 

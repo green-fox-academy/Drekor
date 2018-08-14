@@ -11,3 +11,8 @@ let integers = [4, 5, 6, 7];
 for(let i = 0; i < integers.length; i++){
     console.log(integers[i]);
 }
+
+//with array method
+integers.forEach(function (value) {
+    console.log(value);
+});
