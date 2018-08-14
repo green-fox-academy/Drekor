@@ -9,9 +9,10 @@ export { }
 // then it should print an error message like: 'Unable to read file: my-file.txt'
 
 const fs = require('fs');
+const text: string = 'my-file.txt';
 
 try {
-  let fileContent = fs.readFileSync('my-file.txt', 'utf-8');
+  let fileContent = fs.readFileSync(text, 'utf-8');
   console.log(fileContent);
 } catch (error) {
   console.log(error.message + " Unable to read file: my-file.txt")

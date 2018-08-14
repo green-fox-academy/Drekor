@@ -9,23 +9,23 @@ export { }
 
 const fileName: string = 'hello.txt'
 const stringType = 'utf-8';
+const fs = require('fs');
 
-function takesString(params: string, stringType: string) {
-
+function takesString(params: string, stringType: string): number {
+  let sum: number = 0;
   try {
-    const fs = require('fs');
-    let sum: number = 0;
-    let fileContent = fs.readFileSync(fileName, stringType)
-
-    fileContent.split('\r\n').forEach(e => {
-      sum++;
-    });
-
-    console.log(sum);
-
-  } catch (error) {
-
+    if (fs.existsSync(params)) {
+      let fileContent: string[] = fs.readFileSync(params, stringType).split('\n');
+      fileContent.forEach(element => {
+        sum++;
+      });
+      return sum;
+    } else {
+      return 0;
+    }
+  }
+  catch (error) {
     console.log(error.message);
   }
 }
-takesString(fileName, stringType);
+console.log(takesString(fileName, stringType));

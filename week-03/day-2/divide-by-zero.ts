@@ -24,4 +24,4 @@ function dividesTen(nums: number) {
     console.log(err);
   }
 }
-console.log(dividesTen(50));
+console.log(dividesTen(0));
