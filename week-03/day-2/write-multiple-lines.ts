@@ -15,9 +15,10 @@ export { }
 const fs = require('fs');
 const path :string = '';
 const word :string = '';
+const 
 
 
-function pathWordNumber(path: any, word: any, number: number) {
+function writingFile(paths: string, words: string, numbers: number) {
 
 let fileContent = '';
 fs.writeFileSync('message.txt', fileContent);

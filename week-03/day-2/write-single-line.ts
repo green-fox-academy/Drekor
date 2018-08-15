@@ -12,10 +12,10 @@ const fs = require('fs');
 const text: string = 'my-file.txt';
 const name: string = 'Dan';
 
-function writeMyName(text: string, name: string) {
+function writeMyName(texts: string, names: string) {
   try {
-    if (fs.existsSync(text)) {
-      fs.writeFileSync(text, name);
+    if (fs.existsSync(texts)) {
+      fs.writeFileSync(texts, names);
     } else {
       throw new SyntaxError('Unable to write file: my-file.txt');
     }
