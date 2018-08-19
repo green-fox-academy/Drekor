@@ -5,19 +5,34 @@
 //    0 0 1 0
 //    0 1 0 0
 //    1 0 0 0
-//
+//    
 // -  Print this two dimensional list to the console
 //
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
 
-let matrixLength: number = 4;
+
 let matrix: number[][] = [];
 
-for (let i = 0; i < matrixLength; i++) {
-  matrix[i] = [];
-  for (let j = 0; j < matrixLength; j++) {
-    matrix[i] = j;
+function matrixF(length: number): number[][] {
+  let numberOnes: number = length - 1;
+  for (let i = 0; i < length; i++) {
+    matrix[i] = []; //row='';
+    for (let elements = 0; elements < length; elements++) {
+      if (elements == numberOnes) {
+        matrix[i].push(1);
+      } else {
+        matrix[i].push(0);
+      }
+    }
+    numberOnes--;
   }
+  return matrix;
 }
-console.log(matrix);
+
+matrixF(4);
+
+matrix.forEach(element => {
+  console.log(element);
+});
+
