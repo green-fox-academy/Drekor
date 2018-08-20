@@ -8,11 +8,10 @@ export { }
 let planetList: string[] = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Uranus', 'Neptune'];
 // Expected output: "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Uranus", "Neptune", "Saturn"
 
-function putSaturn(params: string[]) {
+function putSaturn(params: string[]): string[] {
   params.push('Saturn')
+  return params
 }
 putSaturn(planetList);
-
-console.log(planetList);
 
 export = putSaturn;
