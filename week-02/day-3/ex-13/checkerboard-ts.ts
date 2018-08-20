@@ -6,23 +6,17 @@ const ctx = canvas.getContext('2d');
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 // Fill the canvas with a checkerboard pattern.
 
-function chessTable(x: number, y: number) {
+function chessTable(x: number, y: number, size: number) {
 
-  ctx.fillRect(x, y, 100, 100);
-  ctx.fill();
-}
-
-let x = 0;
-let y = 0;
-
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
-      if (i % 2 == 0) {
-      if (j % 2 == 0) {
-        x += i * 100;
-        chessTable(x, y)
-      }
+  for (let j = 0; j < canvas.width; j++) {
+    for (let i = 0; i < canvas.width; i++) {
+      ctx.fillRect(x, y, size, size);
+      ctx.fillRect(x + size, y + size, size, size);
+      ctx.fill();
+      x += size * 2;
     }
+    x = 0;
+    y += size * 2;
   }
 }
-
+chessTable(0, 0, canvas.width / Math.floor(Math.random() * 500));
