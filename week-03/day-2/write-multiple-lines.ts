@@ -13,15 +13,13 @@ export { }
 
 
 const fs = require('fs');
-const path :string = '';
-const word :string = '';
-const 
-
 
 function writingFile(paths: string, words: string, numbers: number) {
-
-let fileContent = '';
-fs.writeFileSync('message.txt', fileContent);
-
+  let file = '';
+  for (let i = 0; i < numbers; i++) {
+    file += words + '\n'
+  }
+  fs.writeFileSync(paths, file);
 }
+writingFile('./message.txt', 'hello', 5);
 
