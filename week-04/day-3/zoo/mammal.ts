@@ -12,4 +12,7 @@ export class Mammal extends Animal {
     this.livingPlace = 'Earth';
     this.smile = false;
   }
+  breed(): string {
+    return `pushing miniature versions out.`
+  }
 } 

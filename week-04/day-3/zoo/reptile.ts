@@ -12,4 +12,7 @@ export class Reptile extends Animal {
     this.livingPlace = 'Water';
     this.smile = true;
   }
+  breed(): string{
+    return `laying eggs.`
+  }
 } 

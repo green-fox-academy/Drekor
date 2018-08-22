@@ -8,7 +8,8 @@ export abstract class Animal {
   protected livingPlace: string;
   protected smile: boolean;
 
-
-   getName(): string
-   breed(): string
+  getName(): string {
+    return this.name;
+  }
+  abstract breed(): string
 }

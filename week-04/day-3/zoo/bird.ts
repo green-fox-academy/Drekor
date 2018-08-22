@@ -12,4 +12,7 @@ export class Bird extends Animal {
     this.livingPlace = 'Air';
     this.smile = true;
   }
+  breed(): string {
+    return `laying eggs.`
+  }
 } 
