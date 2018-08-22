@@ -8,6 +8,11 @@ function initializeDominoes(): Domino[] {
   dominoes.push(new Domino(6, 7));
   dominoes.push(new Domino(2, 4));
   dominoes.push(new Domino(7, 1));
+
+  dominoes.sort(function (a: Domino, b: Domino): number {
+    return a.compareTo(b);
+  });
+
   return dominoes;
 }
 

@@ -5,13 +5,9 @@ import { Animal } from "./animal"
 export class Mammal extends Animal {
 
   constructor(name: string) {
-    super();
-    this.name = 'Koala';
-    this.age = 20;
-    this.gender = 'male';
-    this.livingPlace = 'Earth';
-    this.smile = false;
+    super('Koala', 20, 'male', 'Earth', false);
   }
+
   breed(): string {
     return `pushing miniature versions out.`
   }
