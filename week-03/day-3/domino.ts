@@ -19,7 +19,7 @@ class Domino implements Comparable {
     } else if (this.values[0] == other[0]) {
       return 0
     } else if (this.values[0] > other[0]) {
-      return 1
+      return 
     }
   }
 }

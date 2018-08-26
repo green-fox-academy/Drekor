@@ -1,10 +1,16 @@
 'use strict'
+export class Flower {
 
-export class Flowers {
+  color: string;
+  name: string;
+  absorvation: number;
+  thirsty: number;
 
-  protected flowers: string;
-
-  constructor() {
-    this.flowers = 
+  constructor(color: string, name: string) {
+    this.name = name;
+    this.color = color;
+    this.absorvation = 75;
+    this.thirsty = 0
   }
 }
+
