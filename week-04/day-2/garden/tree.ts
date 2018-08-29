@@ -1,15 +1,13 @@
+import { Plant } from "./plant";
+
 'use strict'
-export class Tree {
 
-  color: string;
-  name: string;
-  absorvation: number;
-  thirsty: number;
+export class Tree extends Plant {
 
-  constructor(color: string, name: string) {
-    this.name = name;
-    this.color = color;
-    this.absorvation = 40;
-    this.thirsty = 0
+  
+
+  constructor(color: string) {
+    super('Tree', color, 0, 10, 40);
   }
+  
 }
