@@ -2,7 +2,7 @@ import { Domino } from "./domino";
 
 function initializeDominoes(): Domino[] {
   let dominoes = [];
-  dominoes.push(new Domino(5, 2));
+  dominoes.push(new Domino(2, 2));
   dominoes.push(new Domino(4, 6));
   dominoes.push(new Domino(1, 5));
   dominoes.push(new Domino(6, 7));

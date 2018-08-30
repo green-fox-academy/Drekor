@@ -1,75 +1,56 @@
+import { F35 } from "./f35";
+import { Carrier } from "./carrier";
+
 export class Aircraft {
 
-  maxAmmo: number;
+  aircraftType: any;
   baseDamage: number;
+  maxAmmo: number;
+  storeAmmo: number;
   damage: number;
-  aircraftName: string;
-  store: number;
 
 
-  constructor(name: string, maxAmmo: number, baseDamage: number) {
-    this.aircraftName = name;
+  constructor(aircraftType: any, baseDamage: number, maxAmmo: number) {
+
+    this.aircraftType = aircraftType;
     this.maxAmmo = maxAmmo;
     this.baseDamage = baseDamage;
     this.damage = baseDamage * maxAmmo;
-    this.store = 0;
+    this.storeAmmo = 0;
   }
 
-  fight() {
-    this.damage = this.baseDamage * this.store
-    this.store = 0;
-    return this.damage;
+  fight(InstanceType: Carrier) {
+    for (let i = 0; i < this.storeAmmo; i++) {
+      InstanceType.healthPoint -= this.storeAmmo * this.baseDamage;
+    }
+    return InstanceType.healthPoint;
   }
+
   refill(refillAmmo: number) {
-    if (refillAmmo <= this.maxAmmo && this.store <= this.maxAmmo) {
-      this.store += refillAmmo;
+    if (refillAmmo < this.maxAmmo && this.storeAmmo < this.maxAmmo) {
+      this.storeAmmo += refillAmmo;
       return 0;
     } else {
-      this.store += this.maxAmmo;
+      this.storeAmmo += this.maxAmmo;
       return Math.abs(refillAmmo - this.maxAmmo);
     }
   }
+
   getType() {
-    return this.aircraftName.toString();
+    return this.aircraftType.toString();
   }
+
   getStatus() {
-    let status: string = this.aircraftName + ' Ammo: ' + this.store + ' Base Damage: ' + this.baseDamage + ' All Damage: ' + this.damage;
-    return status;
+    let status: string = ` Type: ${this.aircraftType}, Ammo: ${this.storeAmmo}, Base Damage: ${this.baseDamage}, All Damage: ${this.damage}`;
+    console.log(status);
   }
-  isPriority(aircraftName) {
-    if (aircraftName == AircraftF16) {
-      return false
-    } else {
+
+  isPriority() {
+    if (this.aircraftType == 'F35') {
       return true;
+    } else {
+      return false;
     }
   }
+
 }
-
-let AircraftF16 = new Aircraft('TypeF16', 8, 30);
-let AircraftF35 = new Aircraft('TypeF35', 12, 50);
-
-class Carrier {
-  aircraftStore: number;
-  ammo: number;
-  health: number;
-
-  constructor(ammo: number, health: number) {
-    this.ammo = ammo;
-    this.health = health;
-    this.aircraftStore = 0;
-  }
-  add() {
-    
-  }
-  fill() {
-
-  }
-  fight() {
-
-  }
-  getStatus() {
-
-  }
-}
-
-console.log();
