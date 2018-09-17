@@ -2,11 +2,11 @@
 
 export class Plant {
 
-  name: string;
-  color: string;
-  waterLevel: number;
-  minimumWaterLevel: number;
-  absorb: number;
+  protected name: string;
+  protected color: string;
+  protected waterLevel: number;
+  protected minimumWaterLevel: number;
+  protected absorb: number;
 
   constructor(name: string, color: string, waterLevel: number, minimumWaterLevel: number, absorb: number) {
 
@@ -15,5 +15,8 @@ export class Plant {
     this.waterLevel = waterLevel;
     this.minimumWaterLevel = minimumWaterLevel;
     this.absorb = absorb;
+  }
+  abstract getcolor() {
+
   }
 }

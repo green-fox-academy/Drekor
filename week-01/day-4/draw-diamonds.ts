@@ -1,12 +1,12 @@
 'use strict';
 
-let lineCount: number = 9;
+let lineCount: number = 10;
 
 // Write a program that draws a
 // diamond like this:
 //
-//    * 0.sor
-//   *** 1.sor
+//    *  0.sor
+//   ***  1.sor
 //  *****
 // *******
 //  *****
@@ -29,7 +29,7 @@ for (let sor = 0; sor < lineCount; sor++) {
             row += ' ';
         }
     }
-    //0.sor, 1.sor, 2.sor
+    // 0.sor, 1.sor, 2.sor
     if (sor < lineCount / 2) {
         for (let star = 0; star <= sor; star++) {
 
