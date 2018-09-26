@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <curses.h>
+#include <conio.h>
 #include "rs232/rs232.h"
 #include "printer.h"
 #include "parser.h"
@@ -34,6 +34,7 @@ int main()
 				} else {
 					logging_is_running = 1;
 					printf("Logging started\n");
+					log_data();
 				}
 				break;
 			case 'c':
