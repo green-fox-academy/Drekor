@@ -1,8 +1,8 @@
 # Prerequisites
-*.d
-# Object files
-*.o
-*.ko
+*.d 
+# Object files 
+*.o 
+*.ko 
 *.obj
 *.elf
 # Linker output
