@@ -45,3 +45,4 @@ Utilities/
 *.ld
 *.project
 *.cproject
+*.metadata
