@@ -1,5 +1,3 @@
-# Just C files
-!*.c
 
 # Logs
 logs
@@ -185,4 +183,53 @@ LinkerScript.ld
 STM32F746G-DISCO.xml
 .settings/
 #ceedling
+build/
+
+### CodeBlocks ###
+*.layout
+*.depend
+*.cbp
+bin/
+obj/
+*.d
+*.o
+*.ko
+*.obj
+*.elf
+*.ilk
+*.map
+*.exp
+*.gch
+*.pch
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.mod*
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+### STM32 System workbench ###
+*.ld
+*.metadata
+*.project
+*.cproject
+*.cfg
+STM32F746G-DISCO.xml
+CMSIS/
+HAL_Driver/
+startup/
+Utilities/
+Debug/
+Release/
+.settings/
 build/
